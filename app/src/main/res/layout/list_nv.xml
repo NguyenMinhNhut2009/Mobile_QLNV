@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageGT"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="103dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtTen"
+        android:layout_width="219dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toRightOf="@id/imageGT"
+        android:textColor="#F44336"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageGT"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtmaNV"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/txtsdt"
+        android:layout_toRightOf="@id/imageGT"
+        android:textColor="#E91E63"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/imageGT"
+        app:layout_constraintTop_toBottomOf="@+id/imagecall"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txttenPhong"
+        android:layout_width="147dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/txtsdt"
+        android:layout_marginEnd="8dp"
+        android:layout_toRightOf="@id/txtmaNV"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtsdt"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imagecall"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/txtTen"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/imageGT"
+        android:background="#FF9800"
+        app:layout_constraintStart_toEndOf="@+id/imageGT"
+        app:layout_constraintTop_toBottomOf="@+id/txtTen"
+        app:srcCompat="@android:drawable/sym_action_call"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imagesms"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/txtTen"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/imagecall"
+        android:background="#FF9800"
+        app:layout_constraintStart_toEndOf="@+id/imagecall"
+        app:layout_constraintTop_toBottomOf="@+id/txtTen"
+        app:srcCompat="@android:drawable/ic_menu_send"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtsdt"
+        android:layout_width="170dp"
+        android:layout_height="29dp"
+        android:layout_below="@id/txtTen"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/imagesms"
+        android:textColor="#4CAF50"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imagesms"
+        app:layout_constraintTop_toBottomOf="@+id/txtTen"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
