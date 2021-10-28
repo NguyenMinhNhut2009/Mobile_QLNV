@@ -53,7 +53,6 @@ public class themphong extends AppCompatActivity {
                         finish();
                     }
                 }else{
-//                    edtmaPhong.setTextColor(getColor(R.color.Do));
                     Toast.makeText(themphong.this,"Bạn phải điền đầy đủ thông tin ",Toast.LENGTH_SHORT).show();
                 }
 
@@ -81,7 +80,7 @@ public class themphong extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle bundle = intent.getBundleExtra("Phong");
         if (bundle!=null){
-            String maPhong= bundle.getString("maPhong","");
+            String maPhong = bundle.getString("maPhong","");
             edtmaPhong.setText(bundle.getString("maPhong",""));
             edttenPhong.setText(bundle.getString("tenPhong",""));
         }
