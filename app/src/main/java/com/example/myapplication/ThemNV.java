@@ -51,6 +51,9 @@ public class ThemNV extends AppCompatActivity {
 
         lvNV.setAdapter(adpter);
     }
-
+    public  void xoaNV(String maNV){
+        nhanVienDao.delete(maNV);
+        capnhatLV();
+    }
 
 }

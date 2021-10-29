@@ -65,9 +65,9 @@ public class PhongAdapter extends ArrayAdapter {
                 alertDialog.show();
             }
         });
-        l.setOnClickListener(new View.OnClickListener() {
+        l.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onLongClick(View v) {
                 Intent intent= new Intent(context, themphong.class);
                 Bundle bundle= new Bundle();
 
@@ -76,10 +76,10 @@ public class PhongAdapter extends ArrayAdapter {
 
                 intent.putExtra("Phong",bundle);
                 ((them)context).startActivity(intent);
-                    return;//return false
-
+                    return false;
             }
         });
+
         return l;
     }
 
